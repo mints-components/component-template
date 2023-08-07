@@ -1,3 +1,7 @@
-export const Template = () => {
-  return <div>this is a template component</div>;
+interface Props {
+  children?: React.ReactNode;
+}
+
+export const Template = ({ children }: Props) => {
+  return <div>{children}</div>;
 };
