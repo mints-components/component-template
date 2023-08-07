@@ -10,7 +10,7 @@
   "module": "./dist/my-component.js",
   "exports": {
     ".": {
-      "import": "./distmy-component.js",
+      "import": "./dist/my-component.js",
       "require": "./dist/my-component.umd.cjs"
     }
   },
