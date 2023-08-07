@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Template } from '../src';
+import { Example } from '../src';
 
 const meta = {
-  title: 'Components/Template',
-  component: Template,
+  title: 'Components/Example',
+  component: Example,
   parameters: {
     layout: 'centered',
   },
-} satisfies Meta<typeof Template>;
+} satisfies Meta<typeof Example>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

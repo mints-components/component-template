@@ -2,6 +2,6 @@ interface Props {
   children?: React.ReactNode;
 }
 
-export const Template = ({ children }: Props) => {
+export const Example = ({ children }: Props) => {
   return <div>{children}</div>;
 };
