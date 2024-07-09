@@ -1,19 +1,19 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Example } from '../src';
+import { Example as Component } from '../src';
 
 const meta = {
   title: 'Components/Example',
-  component: Example,
+  component: Component,
   parameters: {
     layout: 'centered',
   },
-} satisfies Meta<typeof Example>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Exmaple: Story = {
+export const Example: Story = {
   args: {
     children: 'This is a example component',
   },
