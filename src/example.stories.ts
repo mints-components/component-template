@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Example as Component } from '../src';
+import { Example as Component } from './example';
 
 const meta = {
   title: 'Components/Example',
