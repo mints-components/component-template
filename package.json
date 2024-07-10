@@ -12,8 +12,14 @@
   "module": "./dist/my-component.js",
   "exports": {
     ".": {
-      "import": "./dist/my-component.js",
-      "require": "./dist/my-component.umd.cjs"
+      "import": {
+        "types": "./types/index.d.ts",
+        "default": "./dist/my-component.js"
+      },
+      "require": {
+        "types": "./types/index.d.ts",
+        "default": "./dist/my-component.umd.cjs"
+      }
     }
   },
   "scripts": {
@@ -23,6 +29,8 @@
     "prettier": "prettier . --write",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "prepublish": "yarn build",
+    "publish": "yarn npm publish",
     "postinstall": "husky install",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable"
