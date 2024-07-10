@@ -4,8 +4,10 @@
   "version": "1.0.0",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
+  "types": "types",
   "main": "./dist/my-component.umd.cjs",
   "module": "./dist/my-component.js",
   "exports": {
@@ -15,7 +17,8 @@
     }
   },
   "scripts": {
-    "build": "tsc && vite build",
+    "clean": "rm -rf dist && rm -rf types",
+    "build": "yarn clean && tsc -p tsconfig.build.json && vite build",
     "lint": "eslint . --fix",
     "prettier": "prettier . --write",
     "storybook": "storybook dev -p 6006",
